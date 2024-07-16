@@ -7,10 +7,10 @@ Vous devrez appeler la fonction comme suit : convertirMajRouge($texte) ;</p>
 
 $texte = "Mon texte en paramètre";
 
-function convertirMajRouge($texte) {
+function convertirMajRouge($texte){
     $texte = mb_strtoupper($texte); //mb_strtoupper met le 'è' en 'È'
     $texte = strtoupper($texte);//
-    return '<span style="color:red;">'.$texte.'</span>';
+    echo '<span style="color:red;">'.$texte.'</span>';
 }
 
-echo convertirMajRouge($texte);
+convertirMajRouge($texte);
