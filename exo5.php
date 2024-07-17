@@ -11,10 +11,12 @@ afficherInput($nomsInput);
 $nomsInput = ["Nom","Prénom","Ville"];
 
 function afficherInput($nomsInput){
+    //echo '<fieldset>';
     foreach($nomsInput as $field){
-        echo '<p style="font-family: sans-serif;">'.$field.'</p>';
-        echo '<input type="text"><br><br>';
+        echo '<label for="'.$field.'" style="font-family: sans-serif;">'.$field.'</label><br>';
+        echo '<input type="text" id="'.$field.'" name="'.$field.'"><br><br>';
     }
+    //echo '</fieldset>';
 }
 
 afficherInput($nomsInput);

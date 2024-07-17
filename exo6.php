@@ -8,7 +8,7 @@ alimenterListeDeroulante($elements);
 <h2>Résultat</h2>
 <?php
 
-$elements = ["Monsieur","Madame","Mademoiselle",];
+$elements = ["Monsieur","Madame","Mademoiselle","Monsieur","Madame","Mademoiselle","Monsieur","Madame","Mademoiselle"];
 
 function alimenterListeDeroulante($elements){
     echo '<select name="tt" id="tt">';

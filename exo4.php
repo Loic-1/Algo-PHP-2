@@ -11,7 +11,7 @@ $capitales = ["France"=>"Paris","Allemagne"=>"Berlin",
 <h2>Résultat</h2>
 <?php
 
-$capitales = ["France"=>"Paris","Allemagne"=>"Berlin","USA"=>"Washington","Italie"=>"Rome","Espagne"=>"Madrid"];
+$capitales = ["France"=>"Paris","USA"=>"Washington","Allemagne"=>"Berlin","Italie"=>"Rome","Espagne"=>"Madrid"];
 
 function afficherTableHTML($capitales) {
     ksort($capitales);
@@ -21,7 +21,7 @@ function afficherTableHTML($capitales) {
         echo '<tr>';
         echo '<td>'.strtoupper($pays).'</td>';
         echo '<td>'.$capitale.'</td>';
-        echo '<td>'.'<a href="https://fr.wikipedia.org/wiki/'.$capitale.'">'.$capitale.'</a>'.'</td>';
+        echo '<td>'.'<a href="https://fr.wikipedia.org/wiki/'.$capitale.'" target="_blank">'.$capitale.'</a>'.'</td>';
         echo '</tr>';
     }
     echo '</table>';
