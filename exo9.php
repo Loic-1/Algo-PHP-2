@@ -6,17 +6,17 @@ afficherRadio($nomsRadio);
 </p>
 <h2>Résultat</h2>
 <?php
-//PAS COMPRIS
+
 $nomsRadio = [
-"Monsieur" => "Masculin",
 "Madame" => "Féminin",
+"Monsieur" => "Masculin",
 "Mademoiselle" => "Féminin"
 ];
 
 function afficherRadio($nomsRadio) {
-    foreach($nomsRadio as $nom){
-        echo '<input type="radio" id="'.$nom.'" name="'.$nom.'" value="'.$nom.'" />';
-        echo '<label for="'.$nom.'">'.$nom.'</label><br>';
+    foreach($nomsRadio as $nom => $sexe){
+        echo '<input type="radio" id="'.$nom.'" name="'.$sexe.'" value="'.$sexe.'" />';
+        echo '<label for="'.$nom.'">'.$sexe.'</label><br>';
     }
 }
 
