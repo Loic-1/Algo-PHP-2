@@ -8,18 +8,18 @@ formaterDateFr("2018-02-23");
 <?php
 
 function formaterDateFr($date) { //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat
-    // $date = new DateTime($date);
-    // $formatter = new IntlDateFormatter(
-    // 'fr_FR',
-    // IntlDateFormatter::FULL,
-    // IntlDateFormatter::NONE);
-    // echo $formatter->format($date);
-    $formatter = new IntlDateFormatter('fr_FR',
-    IntlDateFormatter::LONG,
-    IntlDateFormatter::NONE,
-    'Europe/Paris',
-    IntlDateFormatter::GREGORIAN);
-    return $formatter ->format($date);
+    $date = new DateTime($date);
+    $formatter = new IntlDateFormatter(
+    'fr_FR',
+    IntlDateFormatter::FULL,
+    IntlDateFormatter::NONE);
+    echo $formatter->format($date);
+    // $formatter = new IntlDateFormatter('fr_FR',
+    // IntlDateFormatter::LONG,
+    // IntlDateFormatter::NONE,
+    // 'Europe/Paris',
+    // IntlDateFormatter::GREGORIAN);
+    // return $formatter ->format($date);
 }
 
 formaterDateFr("2018-02-23");
